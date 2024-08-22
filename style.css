@@ -353,7 +353,7 @@ main {
 .about-desc p {
     font-size: 18px;
     line-height: 17.15px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .services {
