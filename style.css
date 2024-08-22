@@ -540,6 +540,23 @@ width: 100%;
 .contact-link-item-link {
     position: relative;
 }
+.review-mobile {
+    display: none;
+}
+.slid-review {
+    
+    min-width: 335px;
+    height: fit-content;
+    max-width: 335px;
+    scroll-snap-align: center;
+}
+.swiper-reviews {
+    gap: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    scroll-snap-type: x mandatory;
+}
 @media (max-width:1171px) {
     
     .services-item {
@@ -575,19 +592,24 @@ width: 100%;
         z-index: 1;
         height: 0;
         top: auto;
-        bottom: 0;
-        left: 50%;
+        bottom: 15%;
+        left: 30%;
         content: '';
         position: absolute;
         border-radius: 20vw;
-        -webkit-box-shadow: 0px 0px 300px 300px rgba(255, 255, 255, 0.4);
-        -moz-box-shadow: 0px 0px 300px 300px rgba(255, 255, 255, 0.4);
-        box-shadow: 0px 0px 300px 300px rgba(255, 255, 255, 0.4);
+        -webkit-box-shadow: 0px 0px 150px 150px rgba(255, 255, 255, 0.8);
+        -moz-box-shadow: 0px 0px 150px 150px rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 150px 150px rgba(255, 255, 255, 0.8);
     }
    
 }
 @media (max-width:800px) {
-    
+    .review-desktop {
+        display: none;
+    }
+    .review-mobile {
+        display: block;
+    }
     .services-item {
         width: 100%;
     }
@@ -677,5 +699,8 @@ width: 100%;
     .contact-link-item-link {
         font-size: 18px;
         
+    }
+    .services-item-title {
+        font-size: 17px;
     }
 }
